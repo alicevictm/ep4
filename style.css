@@ -1,10 +1,10 @@
 header{
-    grid-area: cab;
-    background-color:#CFE2F3;
+    grid-area: cab; /* Esta linha atribui ao elemento header uma área de grade chamada "cab". Isso sugere que o elemento header será posicionado dentro de um layout de grade CSS maior que usa essa área de grade "cab" */
+    background-color:#CFE2F3; /* define a cor de fundo para esses elementos */
 }
 
 main{
-    grid-area: pri;
+    grid-area: pri; 
     background-color: #FFFFFF;
 }
 footer{
@@ -18,13 +18,7 @@ body{
     "cab cab"
     "pri pri"
     "rod rod";
-    grid-template-rows: 200px 1500px 200px;
-    grid-template-columns: 300px auto;
-}
-
-header img{
-    height: 150px;
-    width: auto;
+    grid-template-rows: 200px 2200px 200px;
 }
 
 @media only screen and (max-width: 820px) {
@@ -35,11 +29,8 @@ header img{
         "rod";
         grid-template-columns: 1fr;
         grid-template-rows: 200px 50px 500px 200px;
-    }   
-    header img{
-        display: none;
     } 
-}
+}  
 
 @media only screen and (max-width: 480px) {
     body{
@@ -60,4 +51,36 @@ header img{
         display: none;
     }
     
+}
+
+h1{
+    font-size: 40px; /* Esta linha define o tamanho da fonte para elementos com a classe .início como 40 pixeis. */
+    color: #4682B4;
+    text-align: center;  /* Esta linha centraliza o texto dentro dos elementos .início. Isso significa que o texto será alinhado horizontalmente no centro do elemento. */
+    font-family:Georgia, 'Times New Roman', Times, serif; /*Esta regra define a família de fontes para os elementos afetados. */
+    text-shadow: 2px 2px 2px rgb(175, 223, 255);
+    border-color: rgb(175, 223, 255);
+    border-style:groove;
+    border-width: 2px 0 2px 0;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 5px auto; /*  A margem cria espaço ao redor do elemento. */ 
+    background-color:#CFE2F3;
+    padding: 30px; /* O preenchimento interno cria espaço entre o conteúdo dentro desses elementos e suas bordas. */
+    text-align:center;
+    border-radius: 40px;
+}
+
+.logo{
+    border-radius: 10%; /* Isso cria um efeito de borda arredondada, transformando efetivamente o elemento em um círculo. */
+    display: flex;
+    padding-top: 1px;
+    padding-left: 10px;
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 40%;
+    float: left;
+    max-width: 150px;
 }
