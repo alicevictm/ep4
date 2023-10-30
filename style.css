@@ -18,7 +18,7 @@ body{
     "cab cab"
     "pri pri"
     "rod rod";
-    grid-template-rows: 200px 2200px 200px;
+    grid-template-rows: 200px 5500px 200px;
 }
 
 @media only screen and (max-width: 820px) {
@@ -74,13 +74,29 @@ h1{
 }
 
 .logo{
-    border-radius: 10%; /* Isso cria um efeito de borda arredondada, transformando efetivamente o elemento em um círculo. */
-    display: flex;
-    padding-top: 1px;
-    padding-left: 10px;
-    max-width: 10rem;
-    max-height: 10rem;
-    border-radius: 40%;
+    border-radius: 20%; /* Isso cria um efeito de borda arredondada, transformando efetivamente o elemento em um círculo. */
+    padding: 20px;
+    max-height: 40rem;
     float: left;
-    max-width: 150px;
+    max-width: 200px;
+}
+
+.tituloheader{
+    font-size: 60px; 
+    color: #4682B4;  
+    font-family:Georgia, 'Times New Roman', Times, serif; /*Esta regra define a família de fontes para os elementos afetados. */
+    text-shadow: 2px 2px 2px rgb(151, 210, 250);
+    border: none;
+    text-align: right;
+    padding-right: 530px;
+}
+
+h3{
+    font-size: 20px;   
+    color: #015396; 
+}
+
+h5{
+    font-size: 20px;   
+    color: #3a82be; 
 }

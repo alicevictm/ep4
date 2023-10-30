@@ -15,7 +15,7 @@ function botaozinho_resposta() {
             document.getElementById("resultado_1").innerHTML = "acertou!";
         }
         else{
-            document.getElementById("resultado_1").innerHTML = "errou";
+            document.getElementById("resultado_1").innerHTML = "errou, a alternativa B fala sobre o governo de Epitácio Pessoa (1919-1922), e a alternativa C fala sobre o governo de Artur Bernardes (1922-1926)";
         }
         if(respostaUsuario2.value === "correto"){
             document.getElementById("resultado_2").innerHTML = "acertou";
