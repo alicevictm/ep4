@@ -1,6 +1,8 @@
 header{
     grid-area: cab; /* Esta linha atribui ao elemento header uma área de grade chamada "cab". Isso sugere que o elemento header será posicionado dentro de um layout de grade CSS maior que usa essa área de grade "cab" */
     background-color:#CFE2F3; /* define a cor de fundo para esses elementos */
+    display: flex;
+    justify-content: space-between;
 }
 
 main{
@@ -69,17 +71,24 @@ h1{
     margin: 5px auto; /*  A margem cria espaço ao redor do elemento. */ 
     background-color:#CFE2F3;
     padding: 30px; /* O preenchimento interno cria espaço entre o conteúdo dentro desses elementos e suas bordas. */
-    text-align:center;
+    text-align: justify;
     border-radius: 40px;
 }
 
 .logo{
     border-radius: 20%; /* Isso cria um efeito de borda arredondada, transformando efetivamente o elemento em um círculo. */
-    padding: 20px;
-    max-height: 40rem;
+    padding: 10px;
+    max-width: 400px;
     float: left;
-    max-width: 200px;
+    height: auto;
 }
+.logo_fantasma{
+    padding: 20px;
+    height: 40rem;
+    float: right;
+    width: 16rem;
+}
+
 
 .tituloheader{
     font-size: 60px; 
@@ -87,8 +96,7 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif; /*Esta regra define a família de fontes para os elementos afetados. */
     text-shadow: 2px 2px 2px rgb(151, 210, 250);
     border: none;
-    text-align: right;
-    padding-right: 530px;
+    text-align: center;
 }
 
 h3{
@@ -99,4 +107,14 @@ h3{
 h5{
     font-size: 20px;   
     color: #3a82be; 
+}
+
+.verificar{
+    color:#FFFFFF;
+    font-size: 20px;  
+    background-color: #3a82be;
+    border-radius: 40px;
+    border-color: #CFE2F3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
 }
