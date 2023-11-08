@@ -10,6 +10,17 @@ function botaozinho_resposta() {
     var respostaUsuario9 = document.querySelector('input[name="resposta"]:checked');
     var respostaUsuario10 = document.querySelector('input[name="resposta"]:checked');
 
+function inclui_nome() {
+    var nome_variavel = prompt("Coloque seu nome:");
+        if(nome_variavel){
+            document.getElementById("marcacao_nome").innerHTML = nome_variavel;
+        }
+        else{
+            alert("Nome não atribuido, preencha o nome.");
+            inclui_nome();
+        }
+}
+
     if(respostaUsuario1 && respostaUsuario2 && respostaUsuario3 && respostaUsuario4 && respostaUsuario5 && respostaUsuario5 && respostaUsuario6 && respostaUsuario7 && respostaUsuario8 && respostaUsuario9 && respostaUsuario10 ){
         if(respostaUsuario1.value === "correto"){
             document.getElementById("resultado_1").innerHTML = "acertou!";
@@ -21,7 +32,7 @@ function botaozinho_resposta() {
             document.getElementById("resultado_2").innerHTML = "acertou";
         }
         else{
-            document.getElementById("resultado_2").innerHTML = "ERROU!!!";
+            document.getElementById("resultado_2").innerHTML = "errou, a alternativa A se refere ao governo de Washington Luís e o regime republicano oligárquico, erigido em 1889, no seu governo.";
         }
         if(respostaUsuario3.value === "correto"){
             document.getElementById("resultado_3").innerHTML = "acertou";
