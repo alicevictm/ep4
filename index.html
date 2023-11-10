@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>QUESTIONÁRIO DE HISTÓRIA</title>
-    <body onload="inclui_nome()">
-        <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -24,89 +22,102 @@
     <h1>Questionário</h1></p>
     <form>
         <div class="container">
-            <div class="questao">
-        <h3>1. O que foi a Era Vargas?</h3>
-        <h5><input type="radio" name="resposta" value="correto">A Era Vargas foi o período de quinze anos da história brasileira que se estendeu de 1930 a 1945 e no qual Getúlio Vargas era o presidente do país. A ascensão de Vargas ao poder foi resultado direto da Revolução de 1930, que destituiu Washington Luís e impediu a posse de Júlio Prestes (presidente eleito que assumiria o país).</h5><br> 
-        <h5><input type="radio" name="resposta" value="incorreta">Getúlio Vargas governou o país de 1919 a 1922, durante o período conhecido como República Velha, após o breve mandato do mineiro Delfim Moreira, rompendo assim, com o sistema político chamado de “café com leite” cuja oligarquia paulista e mineira alternavam o poder. O governo de Getúlio Vargas foi marcado por inúmeras agitações sociais, principalmente na área trabalhista, por rebeliões militares e pelo aprofundamento das divisões políticas entre as oligarquias dominantes</h5><br>
-        <h5><input type="radio" name="resposta" value="incorreta">A Era Vargas (1922-1926) teve como características principais a crise do regime político oligárquico e a repressão às oposições ao regime. O tenentismo, a Revolução Gaúcha, a repressão ao movimento operário e a Semana de Arte Moderna foram os principais acontecimentos de seu governo.</h5><br>
-        <p id="resultado_1"></p>
-
+            <!-- Questão 1 -->
+            <div class="questao" id="questao1">
+        <h3>1. O que foi a Era Vargas?</h3><br>
+        <h5><input type="radio" name="resposta1" value="correta"> A Era Vargas foi o período de quinze anos da história brasileira que se estendeu de 1930 a 1945 e no qual Getúlio Vargas era o presidente do país. A ascensão de Vargas ao poder foi resultado direto da Revolução de 1930, que destituiu Washington Luís e impediu a posse de Júlio Prestes (presidente eleito que assumiria o país).</h5><br> 
+        <h5><input type="radio" name="resposta1" value="incorreta"> Getúlio Vargas governou o país de 1919 a 1922, durante o período conhecido como República Velha, após o breve mandato do mineiro Delfim Moreira, rompendo assim, com o sistema político chamado de “café com leite” cuja oligarquia paulista e mineira alternavam o poder. O governo de Getúlio Vargas foi marcado por inúmeras agitações sociais, principalmente na área trabalhista, por rebeliões militares e pelo aprofundamento das divisões políticas entre as oligarquias dominantes</h5><br>
+        <h5><input type="radio" name="resposta1" value="incorreta"> A Era Vargas (1922-1926) teve como características principais a crise do regime político oligárquico e a repressão às oposições ao regime. O tenentismo, a Revolução Gaúcha, a repressão ao movimento operário e a Semana de Arte Moderna foram os principais acontecimentos de seu governo.</h5><br>
+        <p id="resultado_1" class="resultado"></p>
+            </div>
+            <!-- Questão 2 -->
         <div class="container">
-            <div class="questao">
-        <h3>2.O governo Constitucional (ou Constitucionalista) durou de 1934 a 1937 e é considerado a segunda etapa da Era Vargas. O que marcou essa época?</h3>
-        <h5><input type="radio" name="resposta2" value="incorreta">Os cafeicultores constituíam a classe social mais poderosa do país, porque o café era o principal produto de exportação e fonte geradora de grande parte da riqueza nacional.</h5><br>
-        <h5><input type="radio" name="resposta2" value="incorreta">a decretação da anistia, os presos políticos foram libertos, acabou a censura à imprensa, e novos partidos políticos foram organizados.</h5><br>
-        <h5><input type="radio" name="resposta2" value="correta">Esta fase foi marcada por greves de operários, pela Revolta Comunista, o combate das ideias de esquerda e a radicalização da política. Foi um período de fortalecimento do Poder Executivo e debilidade do legislativo.</h5><br>
-        <p id="resultado_2"></p>
-
+            <div class="questao" id="questao2">
+        <h3>2. O governo Constitucional (ou Constitucionalista) durou de 1934 a 1937 e é considerado a segunda etapa da Era Vargas. O que marcou essa época?</h3><br>
+        <h5><input type="radio" name="resposta2" value="incorreta"> Os cafeicultores constituíam a classe social mais poderosa do país, porque o café era o principal produto de exportação e fonte geradora de grande parte da riqueza nacional.</h5><br>
+        <h5><input type="radio" name="resposta2" value="incorreta"> A decretação da anistia, os presos políticos foram libertos, acabou a censura à imprensa, e novos partidos políticos foram organizados.</h5><br>
+        <h5><input type="radio" name="resposta2" value="correta"> Esta fase foi marcada por greves de operários, pela Revolta Comunista, o combate das ideias de esquerda e a radicalização da política. Foi um período de fortalecimento do Poder Executivo e debilidade do legislativo.</h5><br>
+        <p id="resultado_2" class="resultado"></p>
+            </div>
+            <!-- Questão 3 -->
         <div class="container">
-            <div class="questao">
-        <h3>3.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta3" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta3" value="correta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta3" value="incorreta">Qualquer coisa</h5><br>
-        <p id="resultado_3"></p>
-
+            <div class="questao" id="questao3">
+        <h3>3. Como as políticas econômicas de Vargas influenciaram no desenvolvimento industrial no Brasil em 1930?</h3><br>
+        <h5><input type="radio" name="resposta3" value="incorreta"> O governo se esforçava para estimular a expansão industrial através da concessão de financiamentos para a importação de maquinário, e criação de taxas alfandegárias que dificultavam a entrada de produtos manufaturados estrangeiros que pudessem concorrer com os produtos similares produzidos no país.</h5><br>
+        <h5><input type="radio" name="resposta3" value="correta"> O plano de políticas econômicas de Getúlio Vargas, conhecido como o Plano de Metas, teve um impacto significativo no desenvolvimento industrial do Brasil no início do século XX. O plano enfatizou a expansão do setor industrial e teve um papel crucial na criação de novas fábricas, o aumento da produção e a melhoria da infraestrutura.</h5><br>
+        <h5><input type="radio" name="resposta3" value="incorreta"> Uma política econômica conhecida como Encilhamento, foi adotada durante o governo provisório do Getúlio Vargas, e incentivou, ainda que de maneira limitada, a industrialização brasileira. </h5><br>
+        <p id="resultado_3" class="resultado"></p>
+            </div>
+            <!-- Questão 4 -->
         <div class="container">
-            <div class="questao">
-        <h3>4.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta4" value="correta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta4" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta4" value="incorreta"><h5>Qualquer coisa</h5><br>
-        <p id="resultado_4"></p>
-
+            <div class="questao" id="questao4">
+        <h3>4. Quais foram os principais objetivos de criação das leis trabalhistas durante o governo de Vargas?</h3><br>
+        <h5><input type="radio" name="resposta4" value="correta"> Melhorar as condições trabalhistas dos brasileiros, aumentar a segurança social e reduzir a desigualdade.</h5><br>
+        <h5><input type="radio" name="resposta4" value="incorreta"> Estabelecer a equivalência interna entre cargos e salários, ser um dos fatores facilitador da retenção de talentos, estabelecer regras para a movimentação de pessoal, estabelecer critérios para o crescimento funcional.  </h5><br>
+        <h5><input type="radio" name="resposta4" value="incorreta"> As leis trabalhistas foram criadas pelo governo de Vargas apenas com o objetivo de regularizar as relações entre patrões e empregados.</h5><br>
+        <p id="resultado_4" class="resultado"></p>
+            </div>
+            <!-- Questão 5 -->
         <div class="container">
-            <div class="questao">
-        <h3>5.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta5" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta5" value="correta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta5" value="incorreta">Qualquer coisa</h5><br>
-        <p id="resultado_5"></p>
-
+            <div class="questao" id="questao5">
+        <h3>5. Qual foi a importância da criação da CLT (Consolidação das Leis do Trabalho) durante o governo de Vargas?</h3><br>
+        <h5><input type="radio" name="resposta5" value="incorreta"> A criação da CLT tornou os trabalhadores mais preguiçosos e aumentou as despesas das empresas. A CLT garante direitos e benefícios que não são necessários para o bem-estar e a saúde dos trabalhadores, como férias, aposentadoria e 13º salário, que apenas geram despesas para os empregadores.</h5><br>
+        <h5><input type="radio" name="resposta5" value="correta"> A carta constitucional de 1934 trouxe avanços sociais importantes para os trabalhadores: instituiu o salário mínimo, a jornada de trabalho de oito horas, o repouso semanal, as férias anuais remuneradas e a indenização por dispensa sem justa causa. Sindicatos e associações profissionais passaram a ser reconhecidos, com o direito de funcionar autonomamente. Da mesma forma, a Constituição de 1937 também consagrou direitos dos trabalhadores.</h5><br>
+        <h5><input type="radio" name="resposta5" value="incorreta"> A CLT não é efetiva, porque o que se fez, na verdade, foi precarizar a situação do trabalhador para aumentar o lucro do empregador.</h5><br>
+        <p id="resultado_5" class="resultado"></p>
+            </div>
+            <!-- Questão 6 -->
         <div class="container">
-            <div class="questao">
-        <h3>6.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta6" value="correta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta6" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta6" value="incorreta">Qualquer coisa</h5><br>
-        <p id="resultado_6"></p>
-
+            <div class="questao" id="questao6">
+        <h3>6. Qual era a justificativa de Vargas para o golpe de 1937?</h3><br>
+        <h5><input type="radio" name="resposta6" value="correta"> Devido à necessidade de um governo autoritário para conter ameaças à estabilidade política.</h5><br>
+        <h5><input type="radio" name="resposta6" value="incorreta"> Devido à demanda popular por um governo mais liberal e descentralizado.</h5><br>
+        <h5><input type="radio" name="resposta6" value="incorreta"> Por causa de pressão internacional para implementar reformas democráticas.</h5><br>
+        <p id="resultado_6" class="resultado"></p>
+            </div>
+            <!-- Questão 7 -->
         <div class="container">
-            <div class="questao">
-        <h3>7.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta7" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta7" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta7" value="correta">>Qualquer coisa</h5><br>
-        <p id="resultado_7"></p>
-
+            <div class="questao" id="questao7">
+        <h3>7. O que levou a formação da Aliança Nacional Libertadora na Era Vargas?</h3><br>
+        <h5><input type="radio" name="resposta7" value="incorreta"> Busca por reformas sociais e democratização.</h5><br>
+        <h5><input type="radio" name="resposta7" value="incorreta"> Influência crescente do fascismo e do integralismo.</h5><br>
+        <h5><input type="radio" name="resposta7" value="correta"> Insatisfação com as políticas autoritárias de Vargas.</h5><br>
+        <p id="resultado_7" class="resultado"></p>
+            </div>
+            <!-- Questão 8 -->
         <div class="container">
-            <div class="questao">
-        <h3>8.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta8" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta8" value="correta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta8" value="incorreta">Qualquer coisa</h5><br>
-        <p id="resultado_8"></p>
-
+            <div class="questao" id="questao8">
+        <h3>8. Qual foi a importância do Departamento de Imprensa e Propaganda na Era Vargas??</h3><br>
+        <h5><input type="radio" name="resposta8" value="incorreta"> Consolidação da imagem do governo perante a população</h5><br>
+        <h5><input type="radio" name="resposta8" value="correta"> Fortalecimento da propaganda como ferramenta política e ideológica.</h5><br>
+        <h5><input type="radio" name="resposta8" value="incorreta"> Promoção do culto à personalidade do presidente Getúlio Vargas</h5><br>
+        <p id="resultado_8" class="resultado"></p>
+            </div>
+            <!-- Questão 9 -->
         <div class="container">
-            <div class="questao">
-        <h3>9.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta9" value="correta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta9" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta9" value="incorreta">Qualquer coisa</h5><br>
-        <p id="resultado_9"></p>
-
+            <div class="questao" id="questao9">
+        <h3>9. Quais os impactos da demora de Vargas em realizar eleições e convocar uma Constituinte?</h3><br>
+        <h5><input type="radio" name="resposta9" value="correta"> Aumento da insatisfação popular com o governo.</h5><br>
+        <h5><input type="radio" name="resposta9" value="incorreta"> Prejuízo para o desenvolvimento de instituições políticas benéficas.</h5><br>
+        <h5><input type="radio" name="resposta9" value="incorreta"> Enfraquecimento da legitimidade do governo de Vargas.</h5><br>
+        <p id="resultado_9" class="resultado"></p>
+            </div>
+            <!-- Questão 10 -->
         <div class="container">
-            <div class="questao">
-        <h3>10.Aqui é uma questão?</h3>
-        <h5><input type="radio" name="resposta10" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta10" value="incorreta">Qualquer coisa</h5><br>
-        <h5><input type="radio" name="resposta10" value="correta">Qualquer coisa</h5><br>
-        <p id="resultado_10"></p>
-        <button type="button" class="verificar" onclick="botaozinho_resposta()">Verificar</button>
+            <div class="questao" id="questao10">
+        <h3>10. o que levou ao fracasso da Intentona Comunista?</h3><br>
+        <h5><input type="radio" name="resposta10" value="incorreta"> A interferência de potências estrangeiras e a falta de ideologia política coerente</h5><br>
+        <h5><input type="radio" name="resposta10" value="incorreta"> A ausência de uma estratégia militar clara e a desorganização interna do movimento.</h5><br>
+        <h5><input type="radio" name="resposta10" value="correta"> A repressão do governo e a falta de apoio popular significativa.</h5><br>
+        <p id="resultado_10" class="resultado"></p>
+        <button type="button" class="verificar" onclick="verificarTodasRespostas()">Verificar Respostas</button>
     </form>
     <script src="script.js"></script>
     </main>
 </body>
 <footer>
+    <p class="estrelinha">─── ⋆⋅☆⋅⋆ ──</p>
+    <p><h5 class="paragrafo-f"> Alice Victória Marques     nº1</h5></p>
+    <p><h5 class="paragrafo-f">2ºB NEM</h5></p>
 </footer>
 </html>
